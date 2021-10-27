@@ -1,0 +1,59 @@
+.container {
+  background: #ffffff;
+  border-radius: 3px;
+  width: 350px;
+  img {
+    width: 100%;
+  }
+  .desp {
+    padding: 30px;
+    h3 {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 22px;
+      line-height: 120%;
+      /* identical to box height, or 29px */
+
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 0;
+      /* black */
+
+      color: #000000;
+    }
+    .row {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #dddddd;
+      padding: 10px;
+      &:last-of-type {
+        border-bottom: none;
+      }
+      .col {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 34px;
+        /* identical to box height, or 171% */
+
+        color: #000000;
+
+        .checked {
+          color: #f9ca38;
+        }
+        .colors {
+          height: 25px;
+          width: 25px;
+          //   background-color: #bbb;
+          margin: 0 3px;
+          border: 1px solid #e5e5e5;
+
+          border-radius: 50%;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

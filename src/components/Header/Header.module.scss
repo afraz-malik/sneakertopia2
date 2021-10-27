@@ -1,0 +1,49 @@
+.container {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 87vh;
+  .insidecontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 44.85px;
+      line-height: 86px;
+      /* identical to box height, or 133% */
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      text-transform: uppercase;
+
+      /* Dark blue */
+      color: #091638;
+    }
+    p {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18.25px;
+      line-height: 34px;
+      width: 80%;
+      /* or 161% */
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      font-feature-settings: 'liga' off;
+
+      /* Dark blue */
+
+      color: #091638;
+    }
+  }
+}

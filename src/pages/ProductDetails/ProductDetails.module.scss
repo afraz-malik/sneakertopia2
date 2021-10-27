@@ -1,0 +1,98 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  justify-content: center;
+  margin: 80px 0;
+  // height: 87vh;
+  .product_cover {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // background-color: pink;
+    padding: 50px;
+    padding-left: 100px;
+    position: relative;
+    .blank {
+      width: 10%;
+      .name {
+        position: absolute;
+        width: 30%;
+        align-self: flex-start;
+        top: 250px;
+        h5 {
+          font-family: Futura BdCn BT;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 16px;
+          /* identical to box height */
+          margin: 0;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          text-transform: uppercase;
+
+          color: #131212;
+        }
+        h2 {
+          font-family: Futura BdCn BT;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 42px;
+          line-height: 86px;
+          display: flex;
+          align-items: center;
+          text-transform: uppercase;
+          margin: 0;
+          color: #131212;
+        }
+        p {
+          font-family: Lato;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 30px;
+          /* or 150% */
+
+          color: #131212;
+          margin: 0;
+          opacity: 0.5;
+        }
+      }
+    }
+    .colors {
+      // width: 20%;
+      h5 {
+        font-family: Futura BdCn BT;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        /* identical to box height */
+
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+
+        color: #131212;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+        li {
+          font-family: Lato;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 30px;
+          /* or 150% */
+
+          color: #131212;
+
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}

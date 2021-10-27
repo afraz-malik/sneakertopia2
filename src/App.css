@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  /* background: #e5e5e5; */
+  background: #e5e5e557;
+}
+a {
+  text-decoration: none;
+}
+@font-face {
+  font-family: Futura MdCn BT;
+  src: url('./fonts/FuturaMediumCondensedBT.ttf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: Futura BdCn BT;
+  font-weight: bold;
+  src: url('./fonts/FuturaBoldCondensedBT.ttf');
+}
+@font-face {
+  font-family: SF Pro Text;
+  font-weight: regular;
+  src: url('./fonts/FontsFree-Net-SFProText-Regular.ttf');
+}

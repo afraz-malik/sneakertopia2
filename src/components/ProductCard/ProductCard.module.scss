@@ -1,0 +1,44 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid transparent;
+
+  &:hover {
+    border: 1px solid lightgrey;
+  }
+  .desp {
+    width: 50%;
+    h2 {
+      margin-bottom: 10px;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 120%;
+      /* or 29px */
+
+      text-transform: uppercase;
+
+      /* black */
+
+      color: #000000;
+    }
+    p {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 180%;
+      /* or 25px */
+
+      /* gray */
+      margin-top: 0;
+      color: #808080;
+
+      opacity: 0.7;
+    }
+  }
+}
