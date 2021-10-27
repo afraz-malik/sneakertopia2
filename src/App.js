@@ -2,7 +2,7 @@ import React from 'react'
 import HomePage from './pages/HomePage/HomePage'
 import './App.css'
 import Compare from './pages/Compare/Compare'
-import { Route, BrowserRouter as Router, Switch } from 'react-router-dom'
+import { Route, HashRouter as Router, Switch } from 'react-router-dom'
 import ProductDetails from './pages/ProductDetails/ProductDetails'
 function App() {
   return (

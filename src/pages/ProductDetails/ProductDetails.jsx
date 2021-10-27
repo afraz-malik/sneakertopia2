@@ -78,7 +78,25 @@ const ProductDetails = () => {
             </ul>
           </div>
         </div>
-        <div className={ProductDetailsCss.product_details}></div>
+        <div className={ProductDetailsCss.product_details}>
+          <div>
+            <h3>PRODUCT DETAILS</h3>
+            <p>
+              The Aleali May x women’s Air Jordan 14 Retro Low SP ‘Fortune’
+              reunites Jordan Brand with the LA-based model and stylist for a
+              fifth collaboration. Inspired by May’s personal heritage and
+              cultural experiences, the low-top is treated to a luxe makeover,
+              highlighted by a tan suede upper with contrasting hits of black on
+              the collar and tongue. The midsole is enlivened with jade accents
+              and a metallic gold shank plate, both of which nod to May’s first
+              ever piece of jewelry — a bracelet that was gifted by her
+              grandmother.
+            </p>
+            <div>
+              <div></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   )
