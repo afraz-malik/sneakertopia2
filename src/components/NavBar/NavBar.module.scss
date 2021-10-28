@@ -39,3 +39,133 @@
     }
   }
 }
+@media (min-width: 1281px) {
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (max-width: 767px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 50px;
+    // height: 13vh;
+    a {
+      text-decoration: none;
+    }
+    .logo {
+    }
+    .rightnav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      grid-gap: 30px;
+      h3 {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18.25px;
+        line-height: 34px;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        font-feature-settings: 'liga' off;
+        color: #091638;
+      }
+      .menu {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 75px;
+        height: 75px;
+        background: #000000;
+        border-radius: 0px 0px 0px 43.5px;
+        img {
+          width: 25px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 481px) and (max-width: 599px) {
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (max-width: 480px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+    // height: 13vh;
+    a {
+      text-decoration: none;
+    }
+    .logo {
+    }
+    .rightnav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      grid-gap: 30px;
+      h3 {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18.25px;
+        line-height: 34px;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        font-feature-settings: 'liga' off;
+        color: #091638;
+      }
+      .menu {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 75px;
+        height: 75px;
+        background: #000000;
+        border-radius: 0px 0px 0px 43.5px;
+        img {
+          width: 25px;
+        }
+      }
+    }
+  }
+}

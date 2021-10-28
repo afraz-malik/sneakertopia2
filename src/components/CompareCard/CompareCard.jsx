@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import CompareCardCss from './CompareCard.module.scss'
 const CompareCard = () => {
   return (
-    <Link to="/details" className={CompareCardCss.container}>
+    <div className={CompareCardCss.container}>
       <img alt="" src="images/sneaker 1 1.png" />
       <div className={CompareCardCss.desp}>
         <h3>Air Max pegasus 37</h3>
@@ -51,7 +51,7 @@ const CompareCard = () => {
           </div>
         </div>
       </div>
-    </Link>
+    </div>
   )
 }
 

@@ -8,16 +8,23 @@ const SearchBar = ({}) => {
   const history = useHistory()
   return (
     <div className={SearchBarCss.container}>
-      <input
-        type="text"
-        placeholder="Search"
-        value={state.search}
-        onChange={(e) => setstate({ ...state, search: e.target.value })}
-      />
-      <button onClick={() => history.push(`/?${state.search}`)}>
-        <img alt="" src="images/search icon.svg" />
-        SEARCH
-      </button>
+      <form
+        onSubmit={(e) => {
+          e.preventDefault()
+          history.push(`/?${state.search}`)
+        }}
+      >
+        <input
+          type="text"
+          placeholder="Search"
+          value={state.search}
+          onChange={(e) => setstate({ ...state, search: e.target.value })}
+        />
+        <button type="submit">
+          <img alt="" src="images/search icon.svg" />
+          SEARCH
+        </button>
+      </form>
     </div>
   )
 }

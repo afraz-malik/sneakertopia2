@@ -8,7 +8,7 @@ const NavBar = () => {
         <img alt="" src="images/image 1.svg" />
       </Link>
       <div className={NavBarCss.rightnav}>
-        <Link to="/compare">
+        <Link to="/">
           <h3>COMPARE</h3>
         </Link>
         <div className={NavBarCss.menu}>

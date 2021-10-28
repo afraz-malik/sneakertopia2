@@ -27,7 +27,7 @@ const HomePage = ({ location }) => {
     // eslint-disable-next-line
   }, [location, state.search])
   if (state.search) {
-    document.getElementById('search').scrollIntoView()
+    // document.getElementById('search').scrollIntoView()
   }
 
   return (
@@ -53,7 +53,7 @@ const HomePage = ({ location }) => {
                     settoggle({ ...toggle, filter: !toggle.filter })
                   }
                 >
-                  {toggle.filter ? 'Hide Filters' : 'Show Filters'}
+                  <span>{toggle.filter ? 'Hide Filters' : 'Show Filters'}</span>
                   <img
                     alt=""
                     className={`${HomePageCss.arrow} fuckingarrow`}
@@ -63,7 +63,7 @@ const HomePage = ({ location }) => {
                   &emsp; &emsp; &emsp;{' '}
                   <span
                     style={{
-                      textDecoration: 'underline',
+                      // textDecoration: 'underline',
                       color: 'black',
                       display: toggle.filter ? 'inline-block' : 'none',
                     }}
