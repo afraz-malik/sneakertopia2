@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/sneakertopia2/static/css/main.0f7569ce.chunk.css",
-    "main.js": "/sneakertopia2/static/js/main.f9825be2.chunk.js",
-    "main.js.map": "/sneakertopia2/static/js/main.f9825be2.chunk.js.map",
+    "main.css": "/sneakertopia2/static/css/main.cf57bb03.chunk.css",
+    "main.js": "/sneakertopia2/static/js/main.0762ef2c.chunk.js",
+    "main.js.map": "/sneakertopia2/static/js/main.0762ef2c.chunk.js.map",
     "runtime-main.js": "/sneakertopia2/static/js/runtime-main.de7586c1.js",
     "runtime-main.js.map": "/sneakertopia2/static/js/runtime-main.de7586c1.js.map",
-    "static/js/2.157aae7e.chunk.js": "/sneakertopia2/static/js/2.157aae7e.chunk.js",
-    "static/js/2.157aae7e.chunk.js.map": "/sneakertopia2/static/js/2.157aae7e.chunk.js.map",
+    "static/js/2.94a4eb1f.chunk.js": "/sneakertopia2/static/js/2.94a4eb1f.chunk.js",
+    "static/js/2.94a4eb1f.chunk.js.map": "/sneakertopia2/static/js/2.94a4eb1f.chunk.js.map",
     "static/js/3.4c7d6a2c.chunk.js": "/sneakertopia2/static/js/3.4c7d6a2c.chunk.js",
     "static/js/3.4c7d6a2c.chunk.js.map": "/sneakertopia2/static/js/3.4c7d6a2c.chunk.js.map",
     "index.html": "/sneakertopia2/index.html",
-    "static/css/main.0f7569ce.chunk.css.map": "/sneakertopia2/static/css/main.0f7569ce.chunk.css.map",
-    "static/js/2.157aae7e.chunk.js.LICENSE.txt": "/sneakertopia2/static/js/2.157aae7e.chunk.js.LICENSE.txt",
+    "static/css/main.cf57bb03.chunk.css.map": "/sneakertopia2/static/css/main.cf57bb03.chunk.css.map",
+    "static/js/2.94a4eb1f.chunk.js.LICENSE.txt": "/sneakertopia2/static/js/2.94a4eb1f.chunk.js.LICENSE.txt",
     "static/media/App.css": "/sneakertopia2/static/media/FuturaMediumCondensedBT.f3e45345.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.de7586c1.js",
-    "static/js/2.157aae7e.chunk.js",
-    "static/css/main.0f7569ce.chunk.css",
-    "static/js/main.f9825be2.chunk.js"
+    "static/js/2.94a4eb1f.chunk.js",
+    "static/css/main.cf57bb03.chunk.css",
+    "static/js/main.0762ef2c.chunk.js"
   ]
 }
