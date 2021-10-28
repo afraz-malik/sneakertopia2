@@ -16,6 +16,10 @@
     position: relative;
     .blank {
       width: 10%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 200px;
       .name {
         position: absolute;
         width: 30%;
@@ -60,6 +64,25 @@
           margin: 0;
           opacity: 0.5;
         }
+      }
+      .scroll {
+        position: absolute;
+        bottom: 55px;
+        left: -25px;
+        // writing-mode: tb-rl;
+        font-family: Futura BdCn BT;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        // line-height: 29px;
+        /* identical to box height */
+
+        // text-align: center;
+        text-transform: uppercase;
+
+        color: #131212;
+
+        transform: rotate(-90deg);
       }
     }
     .cover {
@@ -161,35 +184,51 @@
       }
     }
     .colors {
-      // width: 20%;
-      h5 {
-        font-family: Futura BdCn BT;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 24px;
-        /* identical to box height */
-
-        display: flex;
-        align-items: center;
-        text-transform: uppercase;
-
-        color: #131212;
-      }
-      ul {
-        list-style-type: none;
-        padding: 0;
-        li {
-          font-family: Lato;
+      width: 10%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      // height: 1303px;
+      .top {
+        h5 {
+          font-family: Futura BdCn BT;
           font-style: normal;
-          font-weight: normal;
+          font-weight: bold;
           font-size: 20px;
-          line-height: 30px;
-          /* or 150% */
+          line-height: 24px;
+          /* identical to box height */
+
+          display: flex;
+          align-items: center;
+          text-transform: uppercase;
 
           color: #131212;
+        }
+        ul {
+          list-style-type: none;
+          padding: 0;
+          li {
+            font-family: Lato;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 30px;
+            /* or 150% */
 
-          opacity: 0.5;
+            color: #131212;
+
+            opacity: 0.5;
+          }
+        }
+      }
+      .bottom {
+        ul {
+          list-style-type: none;
+          li {
+            margin: 15px 0;
+            // float: right;
+            text-align: right;
+          }
         }
       }
     }

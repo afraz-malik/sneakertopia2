@@ -78,6 +78,7 @@ const ProductDetails = () => {
                 puts it through a modern lens.
               </p>
             </div>
+            <div className={ProductDetailsCss.scroll}>Scroll Down</div>
           </div>
           <div className={ProductDetailsCss.cover}>
             <div className={ProductDetailsCss.cover}>
@@ -114,13 +115,28 @@ const ProductDetails = () => {
             </div>
           </div>
           <div className={ProductDetailsCss.colors}>
-            <h5>COLOR OPTIONS</h5>
-            <ul>
-              <li>White</li>
-              <li>Blue</li>
-              <li>Green</li>
-              <li>Red</li>
-            </ul>
+            <div className={ProductDetailsCss.top}>
+              <h5>COLOR OPTIONS</h5>
+              <ul>
+                <li>White</li>
+                <li>Blue</li>
+                <li>Green</li>
+                <li>Red</li>
+              </ul>
+            </div>
+            <div className={ProductDetailsCss.bottom}>
+              <ul>
+                <li>
+                  <img alt="" src="images/facebook-fill 1.svg" />
+                </li>
+                <li>
+                  <img alt="" src="images/instagram-fill 1.svg" />
+                </li>
+                <li>
+                  <img alt="" src="images/twitter-fill 1.svg" />
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div className={ProductDetailsCss.product_details}>
