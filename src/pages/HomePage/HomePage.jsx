@@ -23,12 +23,12 @@ const HomePage = ({ location }) => {
       search: location.search ? decodeURI(location.search.substr(1)) : null,
     })
     // console.log('updaed')
+    if (state.search) {
+      document.getElementById('search').scrollIntoView()
+    }
 
     // eslint-disable-next-line
   }, [location, state.search])
-  if (state.search) {
-    // document.getElementById('search').scrollIntoView()
-  }
 
   return (
     <div className={HomePageCss.container}>

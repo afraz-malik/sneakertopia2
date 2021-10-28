@@ -1,12 +1,30 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import CompareCard from '../../components/CompareCard/CompareCard'
 import NavBar from '../../components/NavBar/NavBar'
 import SearchBar from '../../components/SearchBar/SearchBar'
 import CompareCss from './Compare.module.scss'
 const Compare = () => {
+  const [state, setstate] = useState(
+    document.documentElement.clientWidth > 700 ? true : false
+  )
+
   useEffect(() => {
     window.scrollTo(0, 0)
+    window.addEventListener('resize', resizeEvent)
+    return () => {
+      window.removeEventListener('resize', resizeEvent)
+    }
   }, [])
+
+  // Reduce Compare Boxes to TWO products on mobile view for REsponsiveness
+  const resizeEvent = () => {
+    const cwidth = document.documentElement.clientWidth
+    if (cwidth > 700) {
+      setstate(true)
+    } else if (cwidth <= 700) {
+      setstate(false)
+    }
+  }
   return (
     <div>
       <NavBar />
@@ -23,7 +41,7 @@ const Compare = () => {
       <div className={CompareCss.cards}>
         <CompareCard />
         <CompareCard />
-        <CompareCard />
+        {state ? <CompareCard /> : null}
       </div>
     </div>
   )

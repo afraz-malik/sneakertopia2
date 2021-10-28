@@ -9,8 +9,8 @@ function App() {
     <Router base>
       <Switch>
         <Route exact path="/" component={HomePage} />
-        {/* <Route exact path="/compare" component={Compare} /> */}
-        {/* <Route exact path="/details" component={ProductDetails} /> */}
+        {/* <Route exact path="/compare" component={Compare} />
+        <Route exact path="/details" component={ProductDetails} /> */}
       </Switch>
     </Router>
   )
