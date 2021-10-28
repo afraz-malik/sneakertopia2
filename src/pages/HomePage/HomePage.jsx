@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
-import Header from '../../components/Header/Header'
 import Navbar from '../../components/NavBar/NavBar'
 import ProductCard from '../../components/ProductCard/ProductCard'
+import SearchBar from '../../components/SearchBar/SearchBar'
 import HomePageCss from './HomePage.module.scss'
 const HomePage = ({ location }) => {
   useEffect(() => {
@@ -27,7 +27,16 @@ const HomePage = ({ location }) => {
   return (
     <div className={HomePageCss.container}>
       <Navbar />
-      <Header />
+      <div className={HomePageCss.headcontainer}>
+        <div className={HomePageCss.insidecontainer}>
+          <h1>FIND THE PERFECT PAIR</h1>
+          <p>
+            Stay on top of the ever-changing sneaker and streetwear markets
+            using our super-powered search engine and comparison tool.
+          </p>
+          <SearchBar />
+        </div>
+      </div>
       <div className={HomePageCss.nav}>
         <ul>
           <li onClick={() => settoggle({ ...toggle, filter: !toggle.filter })}>
