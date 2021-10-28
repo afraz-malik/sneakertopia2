@@ -32,7 +32,6 @@ const HomePage = ({ location }) => {
 
   return (
     <div className={HomePageCss.container}>
-      <Navbar />
       <div className={HomePageCss.headcontainer}>
         <div className={HomePageCss.insidecontainer}>
           <h1>FIND THE PERFECT PAIR</h1>

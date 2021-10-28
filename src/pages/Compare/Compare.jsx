@@ -27,7 +27,6 @@ const Compare = () => {
   }
   return (
     <div>
-      <NavBar />
       <div className={CompareCss.container}>
         <SearchBar />
         <div className={CompareCss.desp}>
