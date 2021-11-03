@@ -11,8 +11,8 @@ function App() {
       <NavBar />
       <Switch>
         <Route exact path="/" component={HomePage} />
-        {/* <Route exact path="/compare" component={Compare} /> */}
-        {/* <Route exact path="/details" component={ProductDetails} /> */}
+        <Route exact path="/compare" component={Compare} />
+        <Route exact path="/details" component={ProductDetails} />
         <Route>
           <h3 style={{ textAlign: 'center' }}>Are you lost baby girl?</h3>
         </Route>

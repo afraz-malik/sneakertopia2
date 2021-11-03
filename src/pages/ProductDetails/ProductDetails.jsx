@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import NavBar from '../../components/NavBar/NavBar'
 import ProductCard from '../../components/ProductCard/ProductCard'
 import SearchBar from '../../components/SearchBar/SearchBar'
 import ProductDetailsCss from './ProductDetails.module.scss'

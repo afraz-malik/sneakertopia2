@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
-import { Route, withRouter } from 'react-router'
-import Navbar from '../../components/NavBar/NavBar'
+import { withRouter } from 'react-router'
 import ProductCard from '../../components/ProductCard/ProductCard'
 import SearchBar from '../../components/SearchBar/SearchBar'
 import HomePageCss from './HomePage.module.scss'

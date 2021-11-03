@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import CompareCard from '../../components/CompareCard/CompareCard'
-import NavBar from '../../components/NavBar/NavBar'
 import SearchBar from '../../components/SearchBar/SearchBar'
 import CompareCss from './Compare.module.scss'
 const Compare = () => {

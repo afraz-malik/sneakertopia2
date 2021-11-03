@@ -132,9 +132,13 @@
 
 @media (max-width: 480px) {
   .card {
-    width: 46%;
-    img {
-      width: 100%;
-    }
+    width: 50%;
+    overflow: hidden;
+    .img {
+      overflow: hidden;
+      width: 150px;
+      // z-index: -1;
+      
   }
+}
 }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router'
 import SearchBarCss from './SearchBar.module.scss'
-const SearchBar = ({}) => {
+const SearchBar = () => {
   const [state, setstate] = useState({
     search: '',
   })
