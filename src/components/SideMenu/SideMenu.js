@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import SideMenuCss from './SideMenu.module.scss'
-// import TextField from '@mui/material/TextField'
-// import AdapterDateFns from '@mui/lab/AdapterDateFns'
-// import LocalizationProvider from '@mui/lab/LocalizationProvider'
-// import DatePicker from '@mui/lab/DatePicker'
+import TextField from '@mui/material/TextField'
+import AdapterDateFns from '@mui/lab/AdapterDateFns'
+import LocalizationProvider from '@mui/lab/LocalizationProvider'
+import DatePicker from '@mui/lab/DatePicker'
 const SideMenu = ({ state, setstate }) => {
   const [toggle, settoggle] = useState({
     category: false,
@@ -101,30 +101,30 @@ const SideMenu = ({ state, setstate }) => {
             style={{ transform: toggle.date ? 'rotate(0deg)' : null }}
           />
         </div>
-        <div className={`${SideMenuCss.date} `}>
+        {/* <div className={`${SideMenuCss.date} `}>
           {!state.date ? null : state.date.toString()}
-        </div>
+        </div> */}
         <div
           className={`${SideMenuCss.leftsectioncard} ${SideMenuCss.insidesecond}`}
           style={{ display: toggle.date ? 'flex' : 'none' }}
         >
           {/* <label onClick={() => datepicker()}>Choose Date</label> */}
-          <input
+          {/* <input
             type="date"
             // style={{ display: 'none' }}
             // data-date-inline-picker="true"
             id="date"
             name="date"
             onChange={(e) => setstate({ ...state, date: e.target.value })}
-          />
-          {/* <LocalizationProvider dateAdapter={AdapterDateFns}>
+          /> */}
+          <LocalizationProvider dateAdapter={AdapterDateFns}>
             <DatePicker
               label="Select Date"
               value={state.date}
-              onChange={(e) => setstate({ ...state, date: e.target.value })}
+              onChange={(date) => setstate({ ...state, date })}
               renderInput={(params) => <TextField {...params} />}
             />
-          </LocalizationProvider> */}
+          </LocalizationProvider>
         </div>
       </div>
     </div>
