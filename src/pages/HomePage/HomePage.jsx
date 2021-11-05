@@ -2,11 +2,12 @@ import React, { useEffect } from 'react'
 import { withRouter } from 'react-router'
 import ProductCard from '../../components/ProductCard/ProductCard'
 import SearchBar from '../../components/SearchBar/SearchBar'
+import SideMenu from '../../components/SideMenu/SideMenu'
 import HomePageCss from './HomePage.module.scss'
 const HomePage = ({ location }) => {
   const initialState = {
     search: location.search ? decodeURI(location.search.substr(1)) : null,
-    sortby: 'All Categories',
+    sortby: 'Price (low-high)',
     date: null,
     category: null,
   }
@@ -94,30 +95,6 @@ const HomePage = ({ location }) => {
                       <ul>
                         <li
                           onClick={() => {
-                            setstate({ ...state, sortby: 'Popular' })
-                            settoggle({ ...toggle, sortby: false })
-                          }}
-                        >
-                          Popular
-                        </li>
-                        <li
-                          onClick={() => {
-                            setstate({ ...state, sortby: 'New' })
-                            settoggle({ ...toggle, sortby: false })
-                          }}
-                        >
-                          New
-                        </li>
-                        <li
-                          onClick={() => {
-                            setstate({ ...state, sortby: 'Avaiablity' })
-                            settoggle({ ...toggle, sortby: false })
-                          }}
-                        >
-                          Availablity
-                        </li>
-                        <li
-                          onClick={() => {
                             setstate({ ...state, sortby: 'Price (low-high)' })
                             settoggle({ ...toggle, sortby: false })
                           }}
@@ -141,7 +118,7 @@ const HomePage = ({ location }) => {
             <div className={HomePageCss.filter_cards}>
               {toggle.filter ? (
                 <div className={HomePageCss.sideMenu}>
-                  {/* <SideMenu setstate={setstate} state={state} /> */}
+                  <SideMenu setstate={setstate} state={state} />
                 </div>
               ) : null}
               <div

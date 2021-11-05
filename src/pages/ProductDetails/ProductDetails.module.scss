@@ -24,7 +24,7 @@
         position: absolute;
         width: 30%;
         align-self: flex-start;
-        top: 250px;
+        top: 120px;
         h5 {
           font-family: Futura BdCn BT;
           font-style: normal;
@@ -184,11 +184,12 @@
       }
     }
     .colors {
-      width: 10%;
+      width: 11%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       // height: 1303px;
+      margin-top: 250px;
       .top {
         h5 {
           font-family: Futura BdCn BT;
@@ -201,7 +202,7 @@
           display: flex;
           align-items: center;
           text-transform: uppercase;
-
+          margin-top: 0;
           color: #131212;
         }
         ul {
@@ -222,12 +223,16 @@
         }
       }
       .bottom {
+        margin-top: 70px;
         ul {
           list-style-type: none;
           li {
             margin: 15px 0;
             // float: right;
             text-align: right;
+            img{
+              width: 20px;
+            }
           }
         }
       }
@@ -329,6 +334,7 @@
     .buyfrom {
       border-bottom: 1.5px solid rgba(0, 0, 0, 0.06);
       padding: 50px 0;
+      max-width: 100%;
       h4 {
         font-family: Futura BdCn BT;
         font-style: normal;
@@ -346,11 +352,13 @@
       }
       .paycards {
         display: flex;
-        justify-content: center;
+        // justify-content: center;
         align-items: center;
         grid-gap: 20px;
-        flex-wrap: wrap;
-
+        // flex-wrap: wrap;
+        margin: 0 auto;
+        width: 100%;
+        overflow-x: auto;
         .card {
           background: #ffffff;
           border: 1px solid rgba(0, 0, 0, 0.08);
@@ -398,7 +406,7 @@
               font-family: Futura BdCn BT;
               font-style: normal;
               font-weight: bold;
-              font-size: 25px;
+              font-size: 18px;
               line-height: 30px;
               /* identical to box height */
 
@@ -547,7 +555,7 @@
           position: relative;
           width: 100%;
           align-self: flex-start;
-          // top: 250px;
+          top: 250px;
           h5 {
           }
           h2 {
@@ -571,6 +579,7 @@
         justify-content: space-between;
         align-items: flex-end;
         // height: 1303px;
+        margin-top:50px;
         .top {
           h5 {
             font-family: Futura BdCn BT;
@@ -1313,7 +1322,7 @@
         h4 {
         }
         .paycards {
-          flex-wrap: wrap;
+          // flex-wrap: wrap;
         }
       }
 

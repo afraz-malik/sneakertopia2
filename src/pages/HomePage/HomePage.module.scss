@@ -246,7 +246,10 @@
       // width: 80%;
     }
     .sideMenu {
-      width: 50%;
+      width: 30%;
+    margin-left:  100px;
+
+      // padding-left: 100px;
     }
   }
 }
@@ -279,6 +282,12 @@
     .nav {
       margin: 0 50px;
     }
+    .sideMenu{
+    margin-left:  50px !important;
+    border-bottom: 1px solid lightgrey;
+    width: 80% !important;
+
+    }
   }
 }
 
@@ -310,6 +319,10 @@
       }
     }
     .filter_cards {
+      flex-direction: column;
+      .sideMenu{
+
+      }
       .cards {
         // display: grid;
         // grid-template-columns: auto auto;

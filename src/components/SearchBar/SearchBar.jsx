@@ -1,6 +1,13 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router'
 import SearchBarCss from './SearchBar.module.scss'
+// import {
+//   Elasticsearch,
+//   SearchBox,
+//   Facet,
+//   Results,
+//   MyCardItem,
+// } from 'react-elasticsearch'
 const SearchBar = () => {
   const [state, setstate] = useState({
     search: '',
@@ -25,6 +32,20 @@ const SearchBar = () => {
           SEARCH
         </button>
       </form>
+      {/* <Elasticsearch url="https://mysneakersapp.herokuapp.com/sneakers/api/sneaker/?search=nike&page=3&size=50">
+        <SearchBox id="mainSearch" />
+        <Facet id="actors" fields={['actors']} />
+        <Facet id="releasedYear" fields={['releasedYear']} />
+        <Results
+          id="results"
+          items={(data) =>
+            // Map on result hits and display whatever you want.
+            data.map((item) => (
+              <MyCardItem key={item._id} source={item._source} />
+            ))
+          }
+        />
+      </Elasticsearch> */}
     </div>
   )
 }
