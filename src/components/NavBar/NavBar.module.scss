@@ -137,11 +137,14 @@
     align-items: center;
     justify-content: space-between;
     margin-left: 20px;
-    // height: 13vh;
+    height: 65px;
     a {
       text-decoration: none;
     }
     .logo {
+      img{
+        width: 40px;
+      }
     }
     .rightnav {
       display: flex;
@@ -152,7 +155,7 @@
         font-family: Open Sans;
         font-style: normal;
         font-weight: 800;
-        font-size: 18.25px;
+        font-size: 16.25px;
         line-height: 34px;
         display: flex;
         align-items: center;
@@ -166,12 +169,14 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 75px;
-        height: 75px;
+        width: 65px;
+        height: 65px;
         background: #000000;
         border-radius: 0px 0px 0px 43.5px;
         img {
-          width: 25px;
+          width: 22px;
+          margin-left: 5px;
+          margin-bottom: 5px;
         }
       }
     }

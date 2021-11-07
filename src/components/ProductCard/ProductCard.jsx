@@ -7,7 +7,7 @@ const ProductCard = () => {
   const [loading, setloading] = useState(true)
   setTimeout(function () {
     setloading(false)
-  }, 3000)
+  }, 0)
   console.log(loading)
   return (
     <Link to="/details" className={ProductCardCss.card}>

@@ -409,7 +409,7 @@
           font-style: normal;
           font-weight: 800;
           font-size: 22px;
-          // line-height: 36px;
+          // line-hei0ht: 36px;
           /* identical to box height, or 133% */
           // margin-bottom: 10px;
           display: flex;
@@ -421,8 +421,9 @@
           color: #091638;
         }
         p {
-          width: 100%;
+          width: 80%;
           font-size: 14px;
+          line-height: 30px;
           margin: 0px 0;
         }
       }

@@ -34,7 +34,7 @@ const SearchBar = () => {
             value={state.search}
             onChange={handleChange}
           />
-          {state.search ? (
+          {/* {state.search ? (
             products ? (
               <ul>
                 {products.map((product, j) => (
@@ -56,7 +56,7 @@ const SearchBar = () => {
                 ))}
               </ul>
             )
-          ) : null}
+          ) : null} */}
         </div>
 
         <button type="submit">

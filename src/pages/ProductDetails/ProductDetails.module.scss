@@ -1141,6 +1141,7 @@
     .product_cover {
       flex-direction: column;
       justify-content: flex-start;
+      overflow: hidden;
       .blank {
         width: 80%;
         display: flex;
@@ -1191,6 +1192,7 @@
           grid-gap: 30px;
           scroll-behavior: smooth;
           max-width: 450px;
+          overflow: hidden;
           .prev,
           .next {
             display: none;
@@ -1210,8 +1212,9 @@
             }
           }
           .slides {
-            // overflow: hidden;
-            width: 60%;
+            overflow: hidden;
+            max-width: unset;
+            // width: 60%;
             ::-webkit-scrollbar {
               width: 4px; /* width of vertical scrollbar */
               // border: 1px solid #d5d5d5;
@@ -1277,7 +1280,7 @@
               font-family: Lato;
               font-style: normal;
               font-weight: normal;
-              font-size: 20px;
+              font-size: 16px;
               line-height: 30px;
               /* or 150% */
 
