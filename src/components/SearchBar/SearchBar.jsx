@@ -1,17 +1,23 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router'
 import SearchBarCss from './SearchBar.module.scss'
-// import {
-//   Elasticsearch,
-//   SearchBox,
-//   Facet,
-//   Results,
-//   MyCardItem,
-// } from 'react-elasticsearch'
+import Skeleton from 'react-loading-skeleton'
+
 const SearchBar = () => {
   const [state, setstate] = useState({
     search: '',
   })
+  const [products, setproducts] = useState(null)
+  const handleChange = (e) => {
+    setstate({ ...state, search: e.target.value })
+    setproducts(null)
+    fetch(
+      `https://mysneakersapp.herokuapp.com/sneakers/api/sneaker/?page=1&size=5&search=${state.search}`
+    )
+      .then((res) => res.json())
+      .then((data) => setproducts(data.results))
+  }
+
   const history = useHistory()
   return (
     <div className={SearchBarCss.container}>
@@ -21,31 +27,43 @@ const SearchBar = () => {
           history.push(`/?${state.search}`)
         }}
       >
-        <input
-          type="text"
-          placeholder="Search"
-          value={state.search}
-          onChange={(e) => setstate({ ...state, search: e.target.value })}
-        />
+        <div>
+          <input
+            type="text"
+            placeholder="Search"
+            value={state.search}
+            onChange={handleChange}
+          />
+          {state.search ? (
+            products ? (
+              <ul>
+                {products.map((product, j) => (
+                  <li
+                    key={j}
+                    onClick={() => history.push('/details')}
+                    // className={[idx].value === product ? SearchBarCss.active : null}
+                  >
+                    {product.product_name}
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <ul>
+                {[...Array(5)].map((ar) => (
+                  <li>
+                    <Skeleton width={200} height={30} />
+                  </li>
+                ))}
+              </ul>
+            )
+          ) : null}
+        </div>
+
         <button type="submit">
           <img alt="" src="images/search icon.svg" />
           SEARCH
         </button>
       </form>
-      {/* <Elasticsearch url="https://mysneakersapp.herokuapp.com/sneakers/api/sneaker/?search=nike&page=3&size=50">
-        <SearchBox id="mainSearch" />
-        <Facet id="actors" fields={['actors']} />
-        <Facet id="releasedYear" fields={['releasedYear']} />
-        <Results
-          id="results"
-          items={(data) =>
-            // Map on result hits and display whatever you want.
-            data.map((item) => (
-              <MyCardItem key={item._id} source={item._source} />
-            ))
-          }
-        />
-      </Elasticsearch> */}
     </div>
   )
 }

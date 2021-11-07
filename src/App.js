@@ -5,6 +5,8 @@ import Compare from './pages/Compare/Compare'
 import { Route, HashRouter as Router, Switch } from 'react-router-dom'
 import ProductDetails from './pages/ProductDetails/ProductDetails'
 import NavBar from './components/NavBar/NavBar'
+import 'react-loading-skeleton/dist/skeleton.css'
+
 function App() {
   return (
     <Router base>

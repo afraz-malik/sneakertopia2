@@ -11,32 +11,69 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    input {
-      background: #ffffff;
-      border: 1px solid #dddddd;
-      box-sizing: border-box;
-      box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.1);
-      border-radius: 4px;
+    div{
+      position: relative;
       width: 80%;
-      height: 50px;
-      border: none;
-      outline: none;
-      font-family: Source Sans Pro;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 17px;
-      line-height: 27px;
-      /* or 159% */
+      input {
+      width: 100%;
+        background: #ffffff;
+        border: 1px solid #dddddd;
+        box-sizing: border-box;
+        box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        height: 50px;
+        border: none;
+        outline: none;
+        font-family: Source Sans Pro;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 27px;
+        /* or 159% */
+  
+        display: flex;
+        align-items: center;
+  
+        /* text color */
+        padding-left: 15px;
+        color: #141b2d;
+  
+        &::placeholder {
+          opacity: 0.5;
+        }
+      }
+      ul{
+        list-style-type: none;
+        position: absolute;
+        z-index: 555;
+        width: 100%;
+        top: 36px;
+        display: flex;
+        flex-direction: column;
+        // grid-gap: 30px;
+        // align-items: center;
+        justify-content: center;
+        padding: 0;
+        box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        background: #ffffff;
+        font-family: Source Sans Pro;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        li{
+          padding: 20px;
+          height: 30px;
+          cursor: pointer;
+          // align-items: center;
+          display: flex;
+          // text-transform:uppercase;
+          align-items: center;
+          &:hover{
+            background-color: lightgrey;
 
-      display: flex;
-      align-items: center;
-
-      /* text color */
-      padding-left: 15px;
-      color: #141b2d;
-
-      &::placeholder {
-        opacity: 0.5;
+          }
+        }
       }
     }
     button {
@@ -64,7 +101,8 @@
         margin-right: 10px;
         width: 15px;
       }
-    }
+    } 
+    
   }
 }
 @media (min-width: 1281px) {

@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { withRouter } from 'react-router'
 import ProductCard from '../../components/ProductCard/ProductCard'
 import SearchBar from '../../components/SearchBar/SearchBar'
 import SideMenu from '../../components/SideMenu/SideMenu'
 import HomePageCss from './HomePage.module.scss'
+
 const HomePage = ({ location }) => {
   const initialState = {
     search: location.search ? decodeURI(location.search.substr(1)) : null,
@@ -11,8 +12,9 @@ const HomePage = ({ location }) => {
     date: null,
     category: null,
   }
-  const [state, setstate] = React.useState(initialState)
-  const [toggle, settoggle] = React.useState({
+  const [products, setproducts] = useState(null)
+  const [state, setstate] = useState(initialState)
+  const [toggle, settoggle] = useState({
     sortby: false,
     filter: false,
   })
@@ -25,11 +27,17 @@ const HomePage = ({ location }) => {
     // console.log('updaed')
     if (state.search) {
       document.getElementById('search').scrollIntoView()
+      setproducts(null)
+      fetch(
+        `https://mysneakersapp.herokuapp.com/sneakers/api/sneaker/??page=1&size=64&search=${state.search}`
+      )
+        .then((res) => res.json())
+        .then((data) => setproducts(data.results))
     }
 
     // eslint-disable-next-line
   }, [location, state.search])
-
+  console.log(products)
   return (
     <div className={HomePageCss.container}>
       <div className={HomePageCss.headcontainer}>
