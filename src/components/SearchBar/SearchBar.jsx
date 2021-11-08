@@ -3,7 +3,7 @@ import { useHistory } from 'react-router'
 import SearchBarCss from './SearchBar.module.scss'
 import Skeleton from 'react-loading-skeleton'
 
-const SearchBar = () => {
+const SearchBar = ({ compare }) => {
   const [state, setstate] = useState({
     search: '',
   })
@@ -24,13 +24,13 @@ const SearchBar = () => {
       <form
         onSubmit={(e) => {
           e.preventDefault()
-          history.push(`/?${state.search}`)
+          return compare ? null : history.push(`/?${state.search}`)
         }}
       >
         <div>
           <input
             type="text"
-            placeholder="Search"
+            placeholder={compare ? 'Compare with' : 'Search'}
             value={state.search}
             onChange={handleChange}
           />

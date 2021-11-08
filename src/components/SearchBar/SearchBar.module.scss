@@ -161,43 +161,46 @@
       grid-gap: 20px;
       display: flex;
       flex-direction: column;
-      input {
-        background: #ffffff;
-        border: 1px solid #dddddd;
-        box-sizing: border-box;
-        box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.1);
-        border-radius: 4px;
-        width: 80%;
-        height: 50px;
-        border: none;
-        outline: none;
-        font-family: Source Sans Pro;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 27px;
-        /* or 159% */
-
-        display: flex;
-        align-items: center;
-
-        /* text color */
-        padding-left: 15px;
-        color: #141b2d;
-
-        &::placeholder {
-          opacity: 0.5;
+      div{
+        width: 100%;
+        input {
+          background: #ffffff;
+          border: 1px solid #dddddd;
+          box-sizing: border-box;
+          box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.1);
+          border-radius: 4px;
+          width: 100%;
+          height: 50px;
+          border: none;
+          outline: none;
+          font-family: Source Sans Pro;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 17px;
+          /* or 159% */
+  
+          display: flex;
+          align-items: center;
+  
+          /* text color */
+          padding-left: 15px;
+          color: #141b2d;
+  
+          &::placeholder {
+            opacity: 0.5;
+          }
         }
       }
       button {
         background: #000000;
         border-radius: 4px;
         height: 50px;
-        width: 80%;
+        width: 100%;
         font-family: Open Sans;
         font-style: normal;
         font-weight: 800;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 22px;
         /* identical to box height */
 
