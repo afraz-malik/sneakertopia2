@@ -5,27 +5,33 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  // border: 1px solid transparent;
+  border: 1px solid transparent;
   width: 300px;
+
   // height: 950px;
   // background-color: pink;
   .img {
     overflow: hidden;
     width: 250px;
+
     // z-index: -1;
     img {
-      transform: rotate(-30deg);
+      // transform: rotate(-30deg);
       width: 100%;
     }
   }
 
+  // padding: 20px;
+
   &:hover {
-    // border: 1px solid lightgrey;
+    border: 1px solid lightgrey;
   }
+
   .desp {
     width: 55%;
     // text-align: center
     margin: 0 auto;
+
     // margin-left: 80px;
     h2 {
       margin-bottom: 10px;
@@ -43,6 +49,7 @@
 
       color: #000000;
     }
+
     p {
       font-family: Open Sans;
       font-style: normal;
@@ -59,32 +66,29 @@
     }
   }
 }
-@media (min-width: 1281px) {
-}
+
+@media (min-width: 1281px) {}
 
 /* 
   ##Device = Laptops, Desktops
   ##Screen = B/w 1025px to 1280px
 */
 
-@media (min-width: 1025px) and (max-width: 1280px) {
-}
+@media (min-width: 1025px) and (max-width: 1280px) {}
 
 /* 
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) {
-}
+@media (min-width: 768px) and (max-width: 1024px) {}
 
 /* 
   ##Device = Tablets, Ipads (landscape)
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
 
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
@@ -94,11 +98,14 @@
 @media (max-width: 767px) {
   .card {
     width: 40%;
+
     img {
       width: 100%;
     }
+
     .desp {
       width: 50%;
+
       h2 {
         margin-bottom: 10px;
         font-family: Montserrat;
@@ -114,6 +121,7 @@
 
         color: #000000;
       }
+
       p {
         font-size: 12px;
 
@@ -122,8 +130,8 @@
     }
   }
 }
-@media (min-width: 481px) and (max-width: 599px) {
-}
+
+@media (min-width: 481px) and (max-width: 599px) {}
 
 /* 
   ##Device = Most of the Smartphones Mobiles (Portrait)
@@ -134,11 +142,12 @@
   .card {
     width: 50%;
     overflow: hidden;
+
     .img {
       overflow: hidden;
       width: 150px;
       // z-index: -1;
-      
+
+    }
   }
-}
 }

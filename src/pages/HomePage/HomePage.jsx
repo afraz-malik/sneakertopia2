@@ -37,7 +37,7 @@ const HomePage = ({ location }) => {
 
     // eslint-disable-next-line
   }, [location, state.search])
-  console.log(products)
+  // console.log(products)
   return (
     <div className={HomePageCss.container}>
       <div className={HomePageCss.headcontainer}>
@@ -134,9 +134,9 @@ const HomePage = ({ location }) => {
                   toggle.filter ? HomePageCss.cardsWithFilter : null
                 }`}
               >
-                {[...Array(24)].map((el, idx) => (
-                  <ProductCard key={idx} />
-                ))}
+                {products? products.map((product, idx) => (
+                  <ProductCard key={idx} product={product}/>
+                )):null}
               </div>
             </div>
           </div>
